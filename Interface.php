@@ -1,23 +1,33 @@
 <?php
 
-interface A
-{
+
+interface A {
     public function a();
 }
-interface B
-{
-    public function b();
+
+interface B {
+     public function b();
 }
-class C implements A, B
-{
-    public function a()
-    {
-        return " i am a ";
-    }
-    public function b()
-    {
-        return "i am b ";
-    }
+
+interface C {
+    public function c();
 }
-$c=new C;
-print_r($c->a().$c->b());
+
+class D implements A,B,C {
+
+    public function a(){
+
+    }
+
+    public function b(){
+
+    }
+
+    public function c(){
+
+    }
+
+}
+
+$d = new D;
+print_r($d);
